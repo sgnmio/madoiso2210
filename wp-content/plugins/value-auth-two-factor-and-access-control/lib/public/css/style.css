@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*************************************************************************************************************************
+* デフォルト：640px以下用の記述
+*************************************************************************************************************************/
+.va_cont *,
+.va_cont {
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+a:focus {
+    box-shadow: none;
+}
+
+.va_cont form, .va_cont ul, .va_cont li, .va_cont dd {
+    margin: 0;
+}
+
+.va_cont input[type="text"] {
+    display: block;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 13px;
+    border: #D6D6D6 1px solid;
+    box-shadow: none;
+}
+
+
+.va_cont input[type="submit"] {
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out 0s;
+    -webkit-box-sizing: content-box;
+    -webkit-appearance: button;
+    appearance: button;
+    box-sizing: border-box;
+}
+
+.va_cont input[type="submit"] {
+    background: #1E9696;
+}
+
+.va_cont ::-webkit-input-placeholder {
+    color: #AAA;
+}
+
+.va_cont :-ms-input-placeholder {
+    color: #AAA;
+}
+
+.va_cont ::placeholder {
+    color: #AAA
+}
+
+.va_cont {
+    background: #fff;
+    padding: 40px 20px 44px;
+    border-radius: 4px;
+    box-shadow: 0 0 3px #E6E6E6;
+}
+
+.va_cont h2 {
+    margin: 0 0 28px;
+    font-size: 16px;
+}
+
+.va_cont h3 {
+    margin: 30px 0 12px;
+    padding: 0 0 8px;
+    color: #1E9696;
+    border-bottom: #D6D6D6 1px solid;
+}
+
+.va_cont .va_use {
+    display: flex;
+}
+
+.va_cont .va_use h2 {
+    margin-bottom: 18px;
+}
+
+.va_cont .va_use a {
+    width: 48px;
+    height: 24px;
+    margin: -3px 10px 36px 0;
+    position: relative;
+    transition: background 0.3s ease-in-out 0s;
+}
+
+.va_cont .va_use a:before {
+    width: 18px;
+    height: 18px;
+}
+
+.va_cont .va_use.on a:before {
+    left: 26px;
+}
+
+.va_cont .va_use.on a {
+    background: #1E9696;
+}
+
+.va_cont .va_use span {
+    font-size: 16px;
+}
+
+.va_cont .va_key div:first-of-type h3 {
+    margin-top: 0;
+}
+
+.va_cont .va_key textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px 16px;
+    font-size: 12px;
+    border: #D6D6D6 1px solid;
+    resize: none;
+}
+
+.va_cont .va_key input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+}
+
+#va_code input[type="submit"] {
+    width: 100px;
+    height: 32px;
+    margin-top: 32px;
+}
+
+#va_code h2 {
+    margin-bottom: 18px;
+}
+
+.va_cont .va_use a {
+    display: block;
+    background: #F2F2F2;
+    border-radius: 100px;
+}
+
+.va_cont .va_use a:before {
+    content: "";
+    display: block;
+    background: #fff;
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    border-radius: 100px;
+    box-shadow: 0 0 3px #E6E6E6;
+}
+
+.va_cont .va_use.on a {
+    background: #1E9696;
+}
+
+/*************************************************************************************************************************
+* 641px以上用の記述
+*************************************************************************************************************************/
+@media print, screen and (min-width: 641px) {
+    .va_cont input[type="text"],
+    .va_cont select {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    .va_cont input[type="submit"]:hover {
+        background: #25B1B1;
+    }
+
+    /* va_cont
+    **********************************************************************/
+    .va_cont {
+        min-height: 450px;
+        padding: 40px 40px 44px;
+    }
+
+    .va_cont.tb {
+        padding: 40px 24px 24px;
+    }
+
+    .va_cont h2 {
+        margin: 0 0 36px;
+    }
+
+    .va_cont.tb h2 {
+        padding: 0 16px;
+    }
+
+    .va_cont h3 {
+        margin: 36px 0 12px;
+    }
+
+    .va_cont .va_use a:hover {
+        background: #25B1B1;
+    }
+
+}
+
+/*************************************************************************************************************************
+* 980px以上用の記述
+*************************************************************************************************************************/
+@media print, screen and (min-width: 980px) {
+
+    /* va_security
+    **********************************************************************/
+    .va_cont dd li {
+        margin-right: 24px;
+        font-size: 16px;
+    }
+}
